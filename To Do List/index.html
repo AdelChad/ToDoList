@@ -1,0 +1,40 @@
+<HTML>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>To do list</title>
+</head>
+<body>
+    <form class ="formulaire">
+        <p>Titre</p>
+        <input type="text" class ="titre" name ="titre">
+        <p>Lieu</p>
+        <input type="text" class ="lieu" name="lieu">
+        <p>Heure</p>
+        <input type="time" class ="heure" name="heure">
+        <p>Description</p>
+        <input type="text" class ="description" name="description">
+        <br><br>
+        <div>
+            <input class="btn btn-normal" type="radio" name="drone" value="normal">
+            <input class="btn btn-vite" type="radio" name="drone" value="vite">
+            <input class="btn btn-urgent" type="radio" name="drone" value="urgent">
+        </div>
+        <br>
+        <button class="ajout" type="submit">Ajouter une tache</button>
+    </form>
+
+
+    <div class="list-a-faire">
+
+    </div>
+    <div class="list-fait">
+
+    </div>
+    <script src="form.js"></script>
+    <script src="Task.js"></script>
+    <script src="app.js"></script>
+</body>
+</HTML>
