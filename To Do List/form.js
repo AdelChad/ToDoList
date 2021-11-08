@@ -6,10 +6,10 @@ class TodoForm {
         this.heure = form.querySelector('.heure')
         this.description = form.querySelector('.description')
         this.difficulte = null
-     
+        this.isActive = true
+    
         this.callback = callback
 
-        console.log(this.form);
         this.addListeners()
     }
 
@@ -20,12 +20,14 @@ class TodoForm {
     onSubmit(event){
         event.preventDefault()
         this.difficulte = form.querySelector('.btn:checked')
+        this.isActive = true
         const result = {
             title: this.title.value,
             lieu: this.lieu.value,
             heure: this.heure.value,
             description : this.description.value,
-            difficulte : this.difficulte.value
+            difficulte : this.difficulte.value,
+            isActive: this.isActive
         }
 
         this.callback(result)
