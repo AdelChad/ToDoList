@@ -1,0 +1,12 @@
+.task[data-v-8570ff]{
+  margin: 12px;
+}
+.task.task-true[data-v-8570ff]{
+  opacity: 0.5;
+}
+.task.task-true .task__title[data-v-8570ff]{
+  text-decoration: line-through;
+}
+.TodoApp[data-v-739d2b] {
+  /* background-color: red; */
+}
